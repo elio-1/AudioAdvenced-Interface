@@ -35,9 +35,9 @@ public class PlayerInteraction : MonoBehaviour
         }
         
     }
-    private void UseTarget()
+    private void UseTarget()    
     {
-        if (Input.GetMouseButtonDown(0) && _target != null)
+        if (Input.GetKeyDown(KeyCode.E) && _target != null)
         {
             _target.Use();
         }
